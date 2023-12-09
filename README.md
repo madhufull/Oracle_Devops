@@ -17,7 +17,7 @@ Getting Started
 	
 	1)copy the source code
 		    select base directory/folder
-			git clone https://github.com/automationdba/automationdba.git
+			git clone https://github.com/madhufull/Oracle_Devops.git
 	2)Install Python 3.6.3 and above version from https://www.python.org/downloads/
     3)Create virtual environment
 			pip3 install virtualenv
@@ -34,7 +34,7 @@ Getting Started
        python manage.py createsuperuser 	
 	9) Run the application
 	   Go to the base directory of cloned repository as per the step 1
-	   go to automationdba folder
+	   go to Oracle_Devops folder
 		run the application by executing below command 
 			python manage.py runserver 
 	10)Access the application url locally from internet browser
@@ -77,8 +77,8 @@ Open Command Prompt(Admin) and execute below command
 	pip3 uninstall dj-database-url Django django-globals django-mysql gunicorn psycopg2 pytz whitenoise
 	pip3 install dj-database-url==0.4.2  Django==2.0.2 django-globals==0.3.2  gunicorn=19.7.1 psycopg2==2.7.3.2 pytz==2018.7 whitenoise==3.3.1
 	pip3 list
-	git clone https://github.com/automationdba/automationdba.git c:\oracle\
-	cd c:\oracle\automationdba
+	git clone https://github.com/madhufull/Oracle_Devops.git c:\oracle\
+	cd c:\oracle\Oracle_Devops
 	python manage.py createsuperuser and provide admin username, password and email address. 
 	python manage.py runserver
 Go to  admin page http://127.0.0.1:8000/admin and add same database user in dbaloginuser table. in this case, userid  as loadtest should be entered in this table. Addd additonal details like email,username,user status as "Active" and comments. 
