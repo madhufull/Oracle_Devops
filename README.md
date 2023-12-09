@@ -62,7 +62,7 @@ Scenario based installation and running the task
 +++++++++++++++++++++++++++++++++++++++++++++++++
  
 
-Question - I would like to install dbawebmenu application in windows folder c:\oracle. As per the installation task , I have already downloaded python version 3.6.3 and installed at c:\python\python36 directory. Also, Oracle database name as ora12c remotely accessible with command sqlplus loadtest/loadtest@ora12c from c:\oracle folder. Moroever, loadtest database user already having DBA privileges.
+Question - I would like to install dbawebmenu application in windows folder c:\oracle. As per the installation task , I have already downloaded python version 3.6.3 and installed at c:\python\python36 directory. Also, Oracle database name as ora19c remotely accessible with command sqlplus loadtest/loadtest@ora19c from c:\oracle folder. Moroever, loadtest database user already having DBA privileges.
 Now, I would like to generate awr report for analysis of performance tuning issues. Could you please help me to extract report from this dbawebmenu application ?
 
 Answer - You need to follow below steps to generate awr report from dbawebmenu application.
@@ -84,21 +84,21 @@ Open Command Prompt(Admin) and execute below command
 Go to  admin page http://127.0.0.1:8000/admin and add same database user in dbaloginuser table. in this case, userid  as loadtest should be entered in this table. Addd additonal details like email,username,user status as "Active" and comments. 
 Go to http://127.0.0.1:8000 which is home page.
 Click on Login(Left side panel) or http://127.0.0.1:8000/loginpage
-Provie input as ora12c as Database tns, loadtest as Database Login user id and loadtest as Login Password and click Login button.
+Provie input as ora19c as Database tns, loadtest as Database Login user id and loadtest as Login Password and click Login button.
 Now, go to the DBA Menu task(Left side panel) or http://127.0.0.1:8000/dbamenus/
 Click 27. Awr report for single/multi snap comparison  or http://127.0.0.1:8000/dbamenu/27
-input as ora12c againt DB Connect String, for Single Instance Snap choose AWR -Single Snap , enter instance id as  1 for single instance. 
+input as ora19c againt DB Connect String, for Single Instance Snap choose AWR -Single Snap , enter instance id as  1 for single instance. 
 Also, enter start snap id and end snap id if you know else click awrsnapid button to get required start and end snap details and finally click to Run button.
 After few seconds, awr report will be generated in new tab/window.
 
 ==================================================================================================================================================
 
-Question - I am production DBA and required to connect multiple database frequently. As per DBAMenu application, I already logged in as user loadtest for the database ORA12C. Now, if I want 
+Question - I am production DBA and required to connect multiple database frequently. As per DBAMenu application, I already logged in as user loadtest for the database ORA19c. Now, if I want 
 to check tablespace utilization report for other database say ORCL then how I can proceed ?
 
-Answer - if you already connected with diff database(here ORA12C) then if your userid and password same for other database(here ORCL) then no need to login again. You can directlry go to the option 33
+Answer - if you already connected with diff database(here ORA19c) then if your userid and password same for other database(here ORCL) then no need to login again. You can directlry go to the option 33
 and provide DB Connect String as ORCL and input required tablespace name and click Run button. Tablespace utilization report will be generated in new tab/window. But in case userid and password not same 
-both databases (ORCL and ORA12c) then you need to logout first from ORA12C and login again to ORCL with userid,password and then go to the option 33.
+both databases (ORCL and ORA19c) then you need to logout first from ORA19c and login again to ORCL with userid,password and then go to the option 33.
 
 
 ==================================================================================================================================================
